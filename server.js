@@ -4,7 +4,7 @@ const homeRoutes = require('./routes/home');
 
 const app = express();
 
-app.use('/', homeRoutes);
+app.use('/find', homeRoutes);
 
 const PORT = process.env.PORT || 8001;
 
