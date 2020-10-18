@@ -1,12 +1,12 @@
 const {Router} = require('express');
 const router = Router();
 
-router.get('/', (req, res) => {
-    res.send({data: MOCKED_RESPONSE});
+router.post('/', (req, res) => {
+    res.send(MOCKED_RESPONSE);
 });
 
 router.post('/create', (req, res) => {
-    res.send({data: MOCKED_SUCCESS})
+    res.send(MOCKED_SUCCESS)
 });
 
 module.exports = router;
@@ -27,7 +27,7 @@ const MOCKED_RESPONSE = {
                 "driver_name": "Деточкин",
                 "driver_phone": "7788",
                 "lat": 56.855532,
-                "lon": 53.217462,
+                "lng": 53.217462,
                 "distance": 300
             }, {
                 "crew_id": 125,
@@ -38,7 +38,7 @@ const MOCKED_RESPONSE = {
                 "driver_name": "Петров",
                 "driver_phone": "8899",
                 "lat": 56.860581,
-                "lon": 53.209223,
+                "lng": 53.209223,
                 "distance": 600
             }
         ]
