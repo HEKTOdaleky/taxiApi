@@ -2,11 +2,11 @@ const {Router} = require('express');
 const router = Router();
 
 router.post('/', (req, res) => {
-    res.send(MOCKED_RESPONSE);
+    setTimeout(() => res.send(MOCKED_RESPONSE), 2000);
 });
 
 router.post('/create', (req, res) => {
-    res.send(MOCKED_SUCCESS)
+    setTimeout(() => res.send(MOCKED_SUCCESS), 2000);
 });
 
 module.exports = router;
